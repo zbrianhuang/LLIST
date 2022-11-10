@@ -11,6 +11,9 @@ public class HarrysWork {
             hList.add(h);
             }
             System.out.println("The new contents of the list is: "+hList);
+
+            hList.delete(2);
+            System.out.println(hList);
         }catch(ListException e){
 
         }

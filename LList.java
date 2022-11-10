@@ -1,5 +1,4 @@
-import javax.management.ListenerNotFoundException;
-import javax.swing.text.DefaultStyledDocument.ElementSpec;
+
 
 public class LList<T> implements ListInterface<T>{
     private Node<T> head;
@@ -84,6 +83,10 @@ public class LList<T> implements ListInterface<T>{
                     return temp;
                 }
             }
+        }else{
+            throw new ListException("no");
+            
+
         }
     }
     public T iterate(int position){
